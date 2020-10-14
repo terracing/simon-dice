@@ -13,6 +13,17 @@ class Game {
 
     inicializar() {
         buttonStart.classList.add('hide')
+        this.level = 1
+        this.colors = {
+            btnOne,
+            btnTwo,
+            btnThree,
+            btnFour
+        }
+    }
+
+    generarSecuencia() {
+        this.secuence = new Array(10).fill(0).map(n => Math.floor(Math.random * 4))
     }
 }
 

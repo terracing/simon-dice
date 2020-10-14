@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Coming Soon', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(8,1fr) / repeat(8,1fr);
+    height: 100vh;
+    gap: 5px;
+    background: #000000;
+}
+
+.color {
+    grid-area: span 4 / span 4;
+}
+
+.container div:nth-of-type(5) {
+    position: fixed;
+    background-color: #a5a5a4;
+    top: calc(50vh - 77px);
+    left: calc(50% - 122px);
+    border-radius: 50%;
+    border: 5px solid #000000;
+}
+
+.container div:nth-of-type(5) a {
+    display: block;
+}
+
+#one.color {
+    background-color: #f0c42a;
+}
+
+#two.color {
+    background-color: #45a8cc;
+}
+
+#three.color {
+    background-color: #c03a2b;
+}
+
+#four.color {
+    background-color: #4eae60;
+}
+
+#btn-start {
+    display: inline-block;
+    justify-content: center;
+    display: inherit;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 50px;
+}

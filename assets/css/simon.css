@@ -29,6 +29,10 @@ body {
     display: block;
 }
 
+.container div.hide {
+    display: none;
+}
+
 #one.color {
     background-color: #f0c42a;
 }

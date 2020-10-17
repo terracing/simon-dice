@@ -34,22 +34,38 @@ body {
 }
 
 #one.color {
-    background-color: #f0c42a;
+    background-color: #ddb628;
+}
+
+#one.color.light {
+    background-color: #ffd94e;
 }
 
 #two.color {
     background-color: #45a8cc;
 }
 
+#two.color.light {
+    background-color: #54d0fd;
+}
+
 #three.color {
     background-color: #c03a2b;
+}
+
+#three.color.light {
+    background-color: #fd4a36;
 }
 
 #four.color {
     background-color: #4eae60;
 }
 
-#btn-start {
+#four.color.light {
+    background-color: #74fa8d;
+}
+
+#buttonStart {
     display: inline-block;
     justify-content: center;
     display: inherit;

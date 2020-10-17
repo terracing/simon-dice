@@ -108,7 +108,6 @@ class Game {
         const nameColor = ev.target.dataset.color
         const numberColor = this.transformColorNumber(nameColor)
         this.lightColor(nameColor)
-        console.log(numberColor + ' -- ' + this.secuence[this.sublevel])
         if (numberColor === this.secuence[this.sublevel]) {
             this.sublevel++
             if (this.sublevel == this.level) {

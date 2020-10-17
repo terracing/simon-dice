@@ -15,6 +15,7 @@ class Game {
     }
 
     inicializar() {
+        this.colorSelect = this.colorSelect.bind(this)
         buttonStart.classList.add('hide')
         this.level = 1
         this.colors = {
@@ -31,6 +32,7 @@ class Game {
 
     nextLevel() {
         this.lightSecuence()
+        this.addClickEvent()
     }
 
     transformSecuence(secuenceNumber) {
@@ -60,6 +62,17 @@ class Game {
             const color = this.transformSecuence(this.secuence[i])
             setTimeout(() => this.lightColor(color), 1000 * i)
         }
+    }
+
+    addClickEvent() {
+        this.colors.btnOne.addEventListener('click', this.colorSelect)
+        this.colors.btnTwo.addEventListener('click', this.colorSelect)
+        this.colors.btnThree.addEventListener('click', this.colorSelect)
+        this.colors.btnFour.addEventListener('click', this.colorSelect)
+    }
+
+    colorSelect(ev) {
+        console.log(this)
     }
 }
 
